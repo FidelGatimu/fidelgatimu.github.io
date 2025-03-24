@@ -1,38 +1,162 @@
-.App {
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HERO Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f4f4f4;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #444;
+}
+
+.scroll-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background: #222;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Filters */
+.filters {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter-btn {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  background: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filter-btn.active,
+.filter-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Projects Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+/* Card Style */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.card-body a {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-body a:hover {
+  text-decoration: underline;
+}
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  background-color: #f8f8f8;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer .social-links {
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.footer a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a:hover {
+  text-decoration: underline;
 }
